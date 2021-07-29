@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Makara::VERSION
 
-  gem.required_ruby_version = ">= 2.5.0"
+  #gem.required_ruby_version = ">= 2.5.0"
 
   gem.add_dependency "activerecord", ">= 3.0.0"
 
