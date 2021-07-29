@@ -20,13 +20,13 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = ">= 2.5.0"
 
-  gem.add_dependency "activerecord", ">= 5.2.0"
+  gem.add_dependency "activerecord", ">= 3.0.0"
 
   gem.add_development_dependency "rack"
-  gem.add_development_dependency "rake", "~> 13.0"
-  gem.add_development_dependency "rspec", "~> 3.9"
+  gem.add_development_dependency "rake" #, "~> 13.0"
+  gem.add_development_dependency "rspec"#, "~> 3.9"
   gem.add_development_dependency "timecop"
-  gem.add_development_dependency "rubocop", "~> 1.17.0"
+  gem.add_development_dependency "rubocop"#, "~> 1.17.0"
 
   if RUBY_ENGINE == "jruby"
     gem.add_development_dependency "activerecord-jdbcmysql-adapter"
