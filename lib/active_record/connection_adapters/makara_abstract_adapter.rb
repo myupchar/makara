@@ -101,9 +101,9 @@ module ActiveRecord
       SQL_SKIP_STICKINESS_MATCHERS  = [/\A\s*show\s([\w]+\s)?(field|table|database|schema|view|index)(es|s)?/i, /\A\s*(set|describe|explain|pragma)\s/i].map(&:freeze).freeze
 
       SQL_MASTER_MATCHERS = SQL_PRIMARY_MATCHERS
-      deprecate_constant :SQL_MASTER_MATCHERS
+      #deprecate_constant :SQL_MASTER_MATCHERS
       SQL_SLAVE_MATCHERS = SQL_REPLICA_MATCHERS
-      deprecate_constant :SQL_SLAVE_MATCHERS
+      #deprecate_constant :SQL_SLAVE_MATCHERS
 
       def sql_primary_matchers
         SQL_PRIMARY_MATCHERS
