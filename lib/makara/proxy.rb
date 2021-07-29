@@ -46,8 +46,8 @@ module Makara
 
         method_names.each do |method_name|
           define_method method_name do |*args, &block|
-		  #control.present? ? control.send(method_name, *args, &block) : nil
-		  control.try(:send(method_name, *args, &block))		  
+		  #control&.send(method_name, *args, &block)
+		  control.send(method_name, *args, &block)
           end
         end
       end
