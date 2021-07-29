@@ -49,7 +49,8 @@ module Makara
 
         method_names.each do |method_name|
           define_method(method_name) do |*args, &block|
-            control&.send(method_name, *args, &block)
+            #control&.send(method_name, *args, &block)
+            control.send(method_name, *args, &block)
           end
 
           ruby2_keywords method_name if Module.private_method_defined?(:ruby2_keywords)
