@@ -1,5 +1,6 @@
 require 'active_record/connection_adapters/makara_abstract_adapter'
 require 'active_record/connection_adapters/mysql2_adapter'
+require "concurrent/utility/monotonic_time"
 
 module ActiveRecord
   module ConnectionHandling
