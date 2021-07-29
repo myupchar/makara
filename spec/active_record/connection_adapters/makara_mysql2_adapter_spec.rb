@@ -2,6 +2,7 @@ require 'spec_helper'
 require 'active_record/connection_adapters/mysql2_adapter'
 require "concurrent/utility/monotonic_time"
 
+
 describe 'MakaraMysql2Adapter' do
 
   let(:db_username){ ENV['TRAVIS'] ? 'travis' : 'root' }
